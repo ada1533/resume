@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+:root{
+    --index: calc(1vw + 1vh);
+    --color-dark: black;
+    --color-white: white;
+}
+@font-face { 
+    font-family: oswald;
+    src: url('./fonts/Oswald-Bold.ttf'); 
+}
+@font-face { 
+    font-family: helvetica;
+    src: url('./fonts/HelveticaWorld-Regular.ttf'); 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: oswald;
+}
+body{
+    background: linear-gradient(to right, #cc1db0 0%, #cd2c3f 100%);
+}
+.maket{
+    margin: auto;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+    background-color: black;
+    color: var(--color-white);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width: 50%;
+    background-color: white;
+    color: var(--color-dark);
+    padding: 30px 25px;
+}
+
+/* ! left */
+/* profile */
+.profile p{
+    margin-top: 10px;
+}
+
+/* media */
+.media{
+    margin-top: 20px;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+}
+.link > a{
+    margin-left: 10px;
+    color: white;
+}
+/* skills */
+.skills{
+    margin-top: 10px;
+}
+.skill_container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill{
+    width: 25%;
+    height: 110px;
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill img{
+    width: 58px;
+}
+/* education */
+.education{
+    margin-top: 10px;
+}
+.education *{
+    margin-top: 5px;
+}
+.education > h4{
+    text-align: end;
+}
+.education__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ! right */
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.title_p{
+    margin-top: 15px;
+    text-align: center;
+}
+/* hobby */
+.hobby_h2{
+    margin-top: 50px;
+}
+.hobbys{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobby{
+    width: 25%;
+    height: 80px;
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* exp */
+.exp{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.exp *{
+    margin-top: 10px;
+}
+.github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.github > a{
+    color: black;
+    font-size: 25px;
+}
+.end{
+    margin-top: 30px;
+}
